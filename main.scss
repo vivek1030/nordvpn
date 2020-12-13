@@ -73,6 +73,13 @@ a{
 
 // Header menu 
 .headermain.fixed{
+    position: fixed;
+    top:0;
+    width: 100%;
+    background-color: #fff;
+}
+.headermain{
+    transition: all .5s ease;
     .navbar-main{
         .main-navmenu{
             justify-content: space-between;
