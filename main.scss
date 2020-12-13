@@ -38,7 +38,13 @@ $p6:3em;
     display:flex;
     flex-wrap: wrap;
 }
-
+.container{
+    padding: 0 $p2;
+}
+.wrap-content{
+    max-width: 1170px;
+    margin: auto;
+}
 // Tags stylings 
 p{
     font-size: $fontsize3;
@@ -66,7 +72,7 @@ a{
 
 
 // Header menu 
-.headermain{
+.headermain.fixed{
     .navbar-main{
         .main-navmenu{
             justify-content: space-between;
@@ -180,6 +186,98 @@ a{
                 }
                 .dropdown-drawer.active{
                     display:block;
+                }
+            }
+        }
+    }
+}
+
+
+// hero section 
+.hero-section{
+    background-image: url('./img/christmas-2020-hero-bg@2x.webp');
+    background-color: rgb(0, 13, 55);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    .wrap-content{
+        .row{
+            align-items: center;
+            justify-content: space-between;
+            padding: 6em 0 3em;
+            .column1{
+                max-width: 520px;
+                .heading1{
+                    font-size:$fontsize5;
+                    color:#fff;
+                    margin-bottom: $p1;
+                }
+                .btn-action{
+                    @include button;
+                    text-decoration: none;
+                    background-color: $secondaryColor;
+                    display: inline-block;
+                    font-size: $fontsize3;
+                    font-weight: 600;
+                    color: #fff;
+                }
+                .para1{
+                    font-size: $fontsize1;
+                    color:#fff;
+                    margin-top: $p3;
+                    svg{
+                        vertical-align: middle;
+                    }
+                }
+                .imgbox-herosection{
+                    .img-bg{
+                        max-width: 100%;
+                    }
+                }
+            }
+            .column2 {
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                justify-content: space-between;
+                margin-top: $p5;
+                .card-brand {
+                    max-width: 120px;
+                    img{
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//landing page change navigation style experimental
+.hero-section{
+    position: relative;
+    top: -6em;
+    z-index: -1;
+}
+.headermain.static{
+    .main-navmenu{
+        border-bottom:unset !important;
+        .logo{
+            #letters{
+                fill:#fff !important;
+            }
+            #mountain{
+                fill:#fff !important;
+            }
+        }
+        .nav-ul{
+            .nav-item{
+                .nav-link{
+                    color:#fff !important;
+                }
+                .btn-dropdown{
+                    span{
+                        background-color: #fff !important;
+                    }
                 }
             }
         }
