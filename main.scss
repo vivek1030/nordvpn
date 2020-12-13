@@ -8,7 +8,7 @@ $textColor1:#383c43;
 $textColor2:#73757a;
 $textColor3:#151922;
 $textColor4:#2c3038;
-$textColor5:#fff;
+$textColor5:#e8e8e9;
 
 // Fontsize 
 $fontsize1:12px;
@@ -62,16 +62,34 @@ a{
             justify-content: space-between;
             align-items: center;
             padding: 1em 2em;
+            border-bottom: 1px solid $textColor5;
             .column1{
                 display: flex;
                 align-items: center;
+                .logo{
+                    padding-right: $p3;
+                    #mountain{
+                        fill: $primaryColor;
+                    }
+                    #letters{
+                        fill:$textColor1;
+                    }
+                }
             }
             .menu1{
+                border-left: 1px solid #ccc;
+                padding-left: $p2;
                 .nav-ul{
                     list-style: none;
                     .nav-item{
                         display: inline-block;
                         padding:$p1 $p1;
+                        .nav-link{
+                            font-size: $fontsize2;
+                            color: $textColor3;
+                            text-decoration: none;
+                            font-weight: 500;
+                        }
                     }
                 }
             }
@@ -81,6 +99,26 @@ a{
                    .nav-item{
                        display: inline-block;
                        padding:$p1 $p1;
+                       .nav-link{
+                            font-size: $fontsize2;
+                            color: $textColor3;
+                            text-decoration: none;
+                            font-weight: 500;
+                        }
+
+                        .btn-dropdown{
+                            display: flex;
+                            flex-wrap: wrap;
+                            width: 30px;
+                            position: relative;
+                            top: -6px;
+                            .toggle-dot{
+                                width: 4px;
+                                height: 4px;
+                                background: $textColor3;
+                                margin: 0 2px 4px;
+                            }
+                        }
                    }
                }
             }
