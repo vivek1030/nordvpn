@@ -62,7 +62,7 @@ a{
 }
 // Mixins 
 @mixin button{
-    border-radius: 6px;
+    border-radius: 4px;
     padding: 8px 16px;
     transition:opacity 0.6s ease;
     &:hover{
@@ -278,6 +278,41 @@ a{
                     span{
                         background-color: #fff !important;
                     }
+                }
+            }
+        }
+    }
+}
+
+// Section 2 ,section3 ,section4
+.section2,.section3,.section4{
+    margin-bottom: $p6 + $p6;
+    .wrap-content{
+        .row{
+            align-items: center;
+            justify-content: space-around;
+            .column1{
+                max-width: 430px;
+                .img-box{
+                    .img-bg{
+                        max-width: 100%;
+                    }
+                }
+                h2{
+                    font-size: $fontsize2+$fontsize2;
+                    color: $textColor1;
+                }
+                p{
+                    color: $textColor1;
+                    font-size: $fontsize3;
+                    line-height: $fontsize1 + $fontsize3;
+                    padding: $p3 0;
+                }
+                .btn-action{
+                    @include button;
+                    text-decoration: none;
+                    background-color: $primaryColor;
+                    color:#fff;
                 }
             }
         }

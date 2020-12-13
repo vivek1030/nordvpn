@@ -138,7 +138,7 @@ a {
 }
 
 .headermain.fixed .navbar-main .main-navmenu .menu2 .nav-ul .nav-item .btn-action {
-  border-radius: 6px;
+  border-radius: 4px;
   padding: 8px 16px;
   -webkit-transition: opacity 0.6s ease;
   transition: opacity 0.6s ease;
@@ -242,7 +242,7 @@ a {
 }
 
 .hero-section .wrap-content .row .column1 .btn-action {
-  border-radius: 6px;
+  border-radius: 4px;
   padding: 8px 16px;
   -webkit-transition: opacity 0.6s ease;
   transition: opacity 0.6s ease;
@@ -317,5 +317,51 @@ a {
 
 .headermain.static .main-navmenu .nav-ul .nav-item .btn-dropdown span {
   background-color: #fff !important;
+}
+
+.section2, .section3, .section4 {
+  margin-bottom: 6em;
+}
+
+.section2 .wrap-content .row, .section3 .wrap-content .row, .section4 .wrap-content .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.section2 .wrap-content .row .column1, .section3 .wrap-content .row .column1, .section4 .wrap-content .row .column1 {
+  max-width: 430px;
+}
+
+.section2 .wrap-content .row .column1 .img-box .img-bg, .section3 .wrap-content .row .column1 .img-box .img-bg, .section4 .wrap-content .row .column1 .img-box .img-bg {
+  max-width: 100%;
+}
+
+.section2 .wrap-content .row .column1 h2, .section3 .wrap-content .row .column1 h2, .section4 .wrap-content .row .column1 h2 {
+  font-size: 28px;
+  color: #383c43;
+}
+
+.section2 .wrap-content .row .column1 p, .section3 .wrap-content .row .column1 p, .section4 .wrap-content .row .column1 p {
+  color: #383c43;
+  font-size: 16px;
+  line-height: 28px;
+  padding: 1.5em 0;
+}
+
+.section2 .wrap-content .row .column1 .btn-action, .section3 .wrap-content .row .column1 .btn-action, .section4 .wrap-content .row .column1 .btn-action {
+  border-radius: 4px;
+  padding: 8px 16px;
+  -webkit-transition: opacity 0.6s ease;
+  transition: opacity 0.6s ease;
+  text-decoration: none;
+  background-color: #4687ff;
+  color: #fff;
+}
+
+.section2 .wrap-content .row .column1 .btn-action:hover, .section3 .wrap-content .row .column1 .btn-action:hover, .section4 .wrap-content .row .column1 .btn-action:hover {
+  opacity: 0.6;
 }
 /*# sourceMappingURL=main.css.map */
