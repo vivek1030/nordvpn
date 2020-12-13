@@ -1,5 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+// Colors
+$primaryColor:#4687ff;
+$secondaryColor:#f64f64;
+$textColor1:#383c43;
+$textColor2:#73757a;
+$textColor3:#151922;
+$textColor4:#2c3038;
+$textColor5:#fff;
+
+// Fontsize 
+$fontsize1:12px;
+$fontsize2:14px;
+$fontsize3:16px;
+$fontsize4:20px;
+$fontsize5:40px;
+$fontsize6:48px;
+
+// Sizing
+$p1:0.5em;
+$p2:1em;
+$p3:1.5em;
+$p4:2em;
+$p5:2.5em;
+$p6:3em;
+
 *{
     padding: 0;
     margin:0;
     box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+// Row and Column
+.row{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+// Tags stylings 
+p{
+    font-size: $fontsize3;
+}
+
+h1{ font-size: $fontsize6;}
+h2{ font-size: $fontsize5;}
+h3{ font-size: $fontsize4;}
+h4{ font-size: $fontsize3;}
+h5{ font-size: $fontsize2;}
+h6{ font-size: $fontsize1;}
+
+a{
+    color:$textColor1;
+}
+
+// Header menu 
+.headermain{
+    .navbar-main{
+        .main-navmenu{
+            justify-content: space-between;
+            align-items: center;
+            padding: 1em 2em;
+            .column1{
+                display: flex;
+                align-items: center;
+            }
+            .menu1{
+                .nav-ul{
+                    list-style: none;
+                    .nav-item{
+                        display: inline-block;
+                        padding:$p1 $p1;
+                    }
+                }
+            }
+            .menu2{
+               .nav-ul{
+                   list-style: none;
+                   .nav-item{
+                       display: inline-block;
+                       padding:$p1 $p1;
+                   }
+               }
+            }
+        }
+    }
 }

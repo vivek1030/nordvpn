@@ -1,7 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+p {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+a {
+  color: #383c43;
+}
+
+.headermain .navbar-main .main-navmenu {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em 2em;
+}
+
+.headermain .navbar-main .main-navmenu .column1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.headermain .navbar-main .main-navmenu .menu1 .nav-ul {
+  list-style: none;
+}
+
+.headermain .navbar-main .main-navmenu .menu1 .nav-ul .nav-item {
+  display: inline-block;
+  padding: 0.5em 0.5em;
+}
+
+.headermain .navbar-main .main-navmenu .menu2 .nav-ul {
+  list-style: none;
+}
+
+.headermain .navbar-main .main-navmenu .menu2 .nav-ul .nav-item {
+  display: inline-block;
+  padding: 0.5em 0.5em;
 }
 /*# sourceMappingURL=main.css.map */
