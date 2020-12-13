@@ -54,6 +54,16 @@ h6{ font-size: $fontsize1;}
 a{
     color:$textColor1;
 }
+// Mixins 
+@mixin button{
+    border-radius: 6px;
+    padding: 8px 16px;
+    transition:opacity 0.6s ease;
+    &:hover{
+        opacity:0.6;
+    }
+}
+
 
 // Header menu 
 .headermain{
@@ -89,11 +99,15 @@ a{
                             color: $textColor3;
                             text-decoration: none;
                             font-weight: 500;
+                            &:hover{
+                                opacity: 0.6;
+                            }
                         }
                     }
                 }
             }
             .menu2{
+                position: relative;
                .nav-ul{
                    list-style: none;
                    .nav-item{
@@ -104,8 +118,16 @@ a{
                             color: $textColor3;
                             text-decoration: none;
                             font-weight: 500;
+                            &:hover{
+                                opacity: 0.6;
+                            }
                         }
-
+                        .btn-action{
+                            @include button;
+                            background-color: $secondaryColor;
+                            color:#fff;
+                            font-size: $fontsize1;
+                        }
                         .btn-dropdown{
                             display: flex;
                             flex-wrap: wrap;
@@ -121,6 +143,44 @@ a{
                         }
                    }
                }
+                .dropdown-drawer {
+                    display:none;
+                    padding: 6px 0;
+                    position: absolute;
+                    width: 100%;
+                    box-shadow: 0 0 0 1px rgba(56,60,67,.05), 0 1px 3px 0 rgba(56,60,67,.15);
+                    background: #fff;
+                    border-radius: 4px;
+                    ul{
+                        list-style: none;
+                        li{
+                            a{
+                                display: block;
+                                text-decoration: none;
+                                padding: $p2;
+                                small{
+                                    display: block;
+                                    font-size: $fontsize1;
+                                    color: #73757a;
+                                    font-weight: 500;
+                                }
+                                span{
+                                    display: block;
+                                    font-size: $fontsize3;
+                                    color: #151922;
+                                    font-weight: 600;
+                                    padding: $p1 0;
+                                }
+                                &:hover{
+                                    background-color: #edf3ff;
+                                }
+                            }
+                        }
+                    }
+                }
+                .dropdown-drawer.active{
+                    display:block;
+                }
             }
         }
     }

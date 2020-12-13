@@ -100,6 +100,14 @@ a {
   font-weight: 500;
 }
 
+.headermain .navbar-main .main-navmenu .menu1 .nav-ul .nav-item .nav-link:hover {
+  opacity: 0.6;
+}
+
+.headermain .navbar-main .main-navmenu .menu2 {
+  position: relative;
+}
+
 .headermain .navbar-main .main-navmenu .menu2 .nav-ul {
   list-style: none;
 }
@@ -114,6 +122,24 @@ a {
   color: #151922;
   text-decoration: none;
   font-weight: 500;
+}
+
+.headermain .navbar-main .main-navmenu .menu2 .nav-ul .nav-item .nav-link:hover {
+  opacity: 0.6;
+}
+
+.headermain .navbar-main .main-navmenu .menu2 .nav-ul .nav-item .btn-action {
+  border-radius: 6px;
+  padding: 8px 16px;
+  -webkit-transition: opacity 0.6s ease;
+  transition: opacity 0.6s ease;
+  background-color: #f64f64;
+  color: #fff;
+  font-size: 12px;
+}
+
+.headermain .navbar-main .main-navmenu .menu2 .nav-ul .nav-item .btn-action:hover {
+  opacity: 0.6;
 }
 
 .headermain .navbar-main .main-navmenu .menu2 .nav-ul .nav-item .btn-dropdown {
@@ -132,5 +158,49 @@ a {
   height: 4px;
   background: #151922;
   margin: 0 2px 4px;
+}
+
+.headermain .navbar-main .main-navmenu .menu2 .dropdown-drawer {
+  display: none;
+  padding: 6px 0;
+  position: absolute;
+  width: 100%;
+  -webkit-box-shadow: 0 0 0 1px rgba(56, 60, 67, 0.05), 0 1px 3px 0 rgba(56, 60, 67, 0.15);
+          box-shadow: 0 0 0 1px rgba(56, 60, 67, 0.05), 0 1px 3px 0 rgba(56, 60, 67, 0.15);
+  background: #fff;
+  border-radius: 4px;
+}
+
+.headermain .navbar-main .main-navmenu .menu2 .dropdown-drawer ul {
+  list-style: none;
+}
+
+.headermain .navbar-main .main-navmenu .menu2 .dropdown-drawer ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 1em;
+}
+
+.headermain .navbar-main .main-navmenu .menu2 .dropdown-drawer ul li a small {
+  display: block;
+  font-size: 12px;
+  color: #73757a;
+  font-weight: 500;
+}
+
+.headermain .navbar-main .main-navmenu .menu2 .dropdown-drawer ul li a span {
+  display: block;
+  font-size: 16px;
+  color: #151922;
+  font-weight: 600;
+  padding: 0.5em 0;
+}
+
+.headermain .navbar-main .main-navmenu .menu2 .dropdown-drawer ul li a:hover {
+  background-color: #edf3ff;
+}
+
+.headermain .navbar-main .main-navmenu .menu2 .dropdown-drawer.active {
+  display: block;
 }
 /*# sourceMappingURL=main.css.map */
